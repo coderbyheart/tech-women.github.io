@@ -8,13 +8,17 @@
                 width="100"
         />
     </a>
-    <h4></h4>
-    <p>
-        <em>{{ include.rolemodel.category }}</em><br/>
-        <strong class="name">{{ include.rolemodel.name }}</strong><br/>
-        <span class="bio">{{ include.rolemodel.short_bio }}</span><br/>
-        <a href="{{site.baseurl}}/role-models/{{ include.rolemodel.slug }}">
-            read more about {{ include.rolemodel.name }}
-        </a>
-    </p>
+    <div>
+        <h4>
+            {{ include.rolemodel.name }}
+        </h4>
+        <p><small>Nominated as a Tech Role Model in the category <em>{{ include.rolemodel.category }}</em>.</small></p>
+        <p>
+            {{ include.rolemodel.short_bio }}
+            <br/>
+            <a href="{{site.baseurl}}/role-models/{{ include.rolemodel.slug }}">
+                read more about {{ include.rolemodel.name }}
+            </a>
+        </p>
+    </div>
 </div>
